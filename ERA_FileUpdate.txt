@@ -1,0 +1,30 @@
+#!/bin/bash
+#########################################################
+#                                                       #
+#                 ERA System Tamplate                   #
+#                                                       #
+#            (c)2018-2019 by VA3CZK & VA3JCD            #
+#                                                       #
+#                        V1.00                          #
+#                                                       #
+#########################################################
+echo "+ Getting Hosts Files..."
+cd /root
+rm -rf /root/P25Hosts.txt
+rm -rf /root/NXDNHosts.txt
+rm -rf /root/DMR_Hosts.txt
+rm -rf /root/ipv4.fw
+
+
+wget http://144.217.241.23/ERA_Files/DMR_Hosts.txt
+wget http://144.217.241.23/ERA_Files/NXDNHosts.txt
+wget http://144.217.241.23/ERA_Files/P25Hosts.txt
+wget http://144.217.241.23/ERA_Files/ipv4.fw
+
+sudo pistar-firewall
+
+echo "Updating Hostfiles..."
+/usr/local/sbin/HostFilesUpdate.sh > /dev/null 2>&1
+echo "Done !!!!..."
+
+exit
