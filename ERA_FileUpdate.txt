@@ -10,11 +10,10 @@
 #########################################################
 echo "+ Getting Hosts Files..."
 cd /root
-rm -rf /root/P25Hosts.txt
-rm -rf /root/NXDNHosts.txt
 rm -rf /root/DMR_Hosts.txt
+rm -rf /root/NXDNHosts.txt
+rm -rf /root/P25Hosts.txt
 rm -rf /root/ipv4.fw
-
 
 wget https://github.com/va3jcd/ERA/blob/main/DMR_Hosts.txt
 wget https://github.com/va3jcd/ERA/blob/main/NXDNHosts.txt
