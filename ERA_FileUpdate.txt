@@ -5,7 +5,7 @@
 #                                                       #
 #            (c)2018-2019 by VA3CZK & VA3JCD            #
 #                                                       #
-#                        V1.00                          #
+#                        V1.50                          #
 #                                                       #
 #########################################################
 echo "+ Getting Hosts Files..."
@@ -16,10 +16,10 @@ rm -rf /root/DMR_Hosts.txt
 rm -rf /root/ipv4.fw
 
 
-wget http://144.217.241.23/ERA_Files/DMR_Hosts.txt
-wget http://144.217.241.23/ERA_Files/NXDNHosts.txt
-wget http://144.217.241.23/ERA_Files/P25Hosts.txt
-wget http://144.217.241.23/ERA_Files/ipv4.fw
+wget https://github.com/va3jcd/ERA/blob/main/DMR_Hosts.txt
+wget https://github.com/va3jcd/ERA/blob/main/NXDNHosts.txt
+wget https://github.com/va3jcd/ERA/blob/main/P25Hosts.txt
+wget https://github.com/va3jcd/ERA/blob/main/ipv4.fw
 
 sudo pistar-firewall
 
