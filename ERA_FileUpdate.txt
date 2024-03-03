@@ -15,10 +15,10 @@ rm -rf /root/NXDNHosts.txt
 rm -rf /root/P25Hosts.txt
 rm -rf /root/ipv4.fw
 
-wget https://github.com/va3jcd/ERA/blob/main/DMR_Hosts.txt
-wget https://github.com/va3jcd/ERA/blob/main/NXDNHosts.txt
-wget https://github.com/va3jcd/ERA/blob/main/P25Hosts.txt
-wget https://github.com/va3jcd/ERA/blob/main/ipv4.fw
+wget https://github.com/va3jcd/ERA/DMR_Hosts.txt
+wget https://github.com/va3jcd/ERA/NXDNHosts.txt
+wget https://github.com/va3jcd/ERA/P25Hosts.txt
+wget https://github.com/va3jcd/ERA/ipv4.fw
 
 sudo pistar-firewall
 
